@@ -8,6 +8,16 @@ using MongoDB.Driver;
 
 namespace Eventure.Read.Mongo
 {
+    
+    /// <summary>
+    /// NOT USED.
+    /// Consider implement and use, to create abstration from MongoCollection.
+    /// Async interface from:
+    /// https://github.com/RobThree/MongoRepository
+    /// https://github.com/sidecut/MongoRepository
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
+    /// <typeparam name="TId"></typeparam>
     public interface IRepository<T, TId> : IQueryable<T> where T : IReadModel<TId>
     {
         IMongoCollection<T> Collection { get; }
