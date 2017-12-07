@@ -3,6 +3,8 @@ solution: Eventure.Read.Mongo.sln
 mono: none
 dotnet: 2.0.3
 dist: trusty
+services:
+   - mongodb
 script:
    - dotnet restore
    - dotnet build
