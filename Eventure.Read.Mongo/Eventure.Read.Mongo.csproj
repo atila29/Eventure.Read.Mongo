@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+      <Authors>Mathias Petersen</Authors>
+      <Version>1.0.0-alpha</Version>
+      <Description>ReadModel for Eventure, with MongoDB</Description>
+      <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+      <PackageReleaseNotes>Initial</PackageReleaseNotes>
+      <PackageTags>cqrs event EventHandler eventsourcing readmodel Eventure</PackageTags>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Eventure" Version="1.2.1-alpha" />
+    <PackageReference Include="MongoDB.Bson" Version="2.4.4" />
+    <PackageReference Include="MongoDB.Driver" Version="2.4.4" />
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.4.4" />
+  </ItemGroup>
+</Project>
