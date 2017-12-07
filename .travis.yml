@@ -1,0 +1,9 @@
+language: csharp
+solution: Eventure.sln
+mono: none
+dotnet: 2.0.3
+dist: trusty
+script:
+   - dotnet restore
+   - dotnet build
+   - dotnet test ./Eventure.Read.Mongo.Test/Eventure.Read.Mongo.Test.csproj
